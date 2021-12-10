@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Inter', sans-serif;
+    color:#000;
+}
+
 .page-header{
     display:flex;
     justify-content:center;
@@ -19,9 +24,90 @@
     width:100%;
 }
 
+.top-infocard{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 80px 0 96px;
+}
+
+.top-infocard-text{
+    max-width:766px;
+    margin-right: 124px;
+}
+
+.top-infocard-subtitle{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 400;  
+}
+
+.top-infocard-title{
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 48px;
+    text-transform: uppercase; 
+}
+
+.top-infocard-description{
+    font-size: 16px;
+    line-height: 24px;
+}
+
 @media screen and (max-width: 414px){
     .main-banner-desktop{
         display:none;
+    }
+}
+
+@media screen and (max-width:992px){
+    .top-infocard{
+        flex-direction:column;
+        padding: 84px 26px 158px;
+    }
+    
+    .top-infocard-text{
+        margin: 0 0 68px;
+    }
+
+    .top-infocard-subtitle{
+        font-size: 20px;
+    }
+    
+    .top-infocard-title{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .top-infocard-image{
+        width:100%;
+        max-width:240px;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1280px){
+    
+    .top-infocard-text{
+        max-width:520px;
+        margin-right: 70px;
+    }
+    
+    .top-infocard-subtitle{
+        text-transform: uppercase;
+        font-size: 32px;
+        font-weight: 400;  
+    }
+    
+    .top-infocard-title{
+        margin-bottom: 24px;
+        font-weight: 500;
+        font-size: 48px;
+        text-transform: uppercase; 
+    }
+    
+    .top-infocard-description{
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
