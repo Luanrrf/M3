@@ -120,6 +120,31 @@ body{
     max-width:368px;
 }
 
+.bottom-infocard{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 142px 0 180px;
+}
+
+.bottom-infocard-image{
+    margin-right: 40px;
+}
+
+.bottom-infocard-text{
+    max-width:480px;
+}
+
+.bottom-infocard-title{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1px;
+}
+
+.bottom-infocard-description{
+    font-size: 16px;
+    line-height: 24px;
+}
 
 @media screen and (max-width: 414px){
     .main-banner-desktop,.middle-banner-desktop{
@@ -189,6 +214,25 @@ body{
         width:100%;
         max-width:240px;
     }
+
+    .bottom-infocard{
+        flex-direction:column;
+        padding: 80px 0 136px;
+    }
+
+    .bottom-infocard-image{
+        margin: 0 0 50px;
+        width:100%;
+        max-width:596px;
+    }
+
+    .bottom-infocard-text{
+        padding: 0 26px;
+    }
+
+    .bottom-infocard-title{
+        font-size: 24px;
+    }
 }
 
 @media screen and (min-width:993px) and (max-width:1280px){
@@ -214,6 +258,14 @@ body{
     .top-infocard-description{
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .bottom-infocard-image{
+        max-width:480px;
+    }
+
+    .bottom-infocard-text{
+        max-width: 400px;
     }
 }
 
