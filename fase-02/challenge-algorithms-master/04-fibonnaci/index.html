@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /* 
+            Faça um algoritmo que resolva a função de fibonnaci
+            Fibonnaci: https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci
+        */
+        function fib(values) {
+            // implementar logica aqui
+            let qtd = values;
+            if (qtd == 0){
+                return 0;
+            }
+            else{
+                if ((qtd == 1) || (qtd == 2)){
+                    return 1;
+                }
+                else{
+                    var retorno = 0;
+                    let fib = [0,1,1];
+                    for (let i = 3; i <= qtd; i++){
+                        fib[i] = fib[i-2] + fib[i-1];
+                        retorno = fib[i];
+                    }
+                }
+            }
+            return retorno;
+        }
+
+        // Resultados esperados
+        console.log(fib(0), 0) // 0
+        console.log(fib(1), 1) // 1
+        console.log(fib(2), 1) // 1
+        console.log(fib(3), 2) // 2
+        console.log(fib(4), 3) // 3
+        console.log(fib(5), 5) // 5
+        console.log(fib(35), 9227465) // 9227465
+        console.log(fib(46), 1836311903) // 1836311903
+
+    </script>
+</body>
+
+</html>

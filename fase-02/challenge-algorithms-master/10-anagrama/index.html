@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /* 
+            Faça um algoritmo que retorne se um palavra é anagram da outra
+        */
+        function isAnagram(test, original) {
+            // implementar logica aqui
+            test = test.split("");
+            test = test.sort();
+            original = original.split("");
+            original = original.sort();
+            console.log(test);
+            console.log(original);
+            
+            for(let i = 0; i < test.length; i++){
+                if (test[i] == original[i]){
+                    continue;
+                }
+                else{
+                    return false;
+                }
+            }            
+            return true;
+        }
+
+        // Resultados esperados
+        console.log(isAnagram("foefet", "toffee"), true) // true
+        console.log(isAnagram("Buckethead", "DeathCubeK"), true) // true
+        console.log(isAnagram("Twoo", "WooT"), true) // true
+
+        console.log(isAnagram("dumble", "bumble"), false) // false
+        console.log(isAnagram("ound", "round"), false) // false
+        console.log(isAnagram("apple", "pale"), false) // false
+
+    </script>
+</body>
+
+</html>
